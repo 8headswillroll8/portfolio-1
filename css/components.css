@@ -1,0 +1,33 @@
+/* header */
+header {
+  font-size: var(--font-size-lg);
+  color: var(--color-white);
+}
+
+/* card */
+.card__actions button {
+  background: none;
+  border: none;
+  text-decoration: solid underline 1.5px;
+  text-underline-offset: 0.3em;
+}
+
+.card__actions button img {
+  margin-right: var(--space-2);
+  max-width: 14px;
+}
+
+.card__img {
+}
+
+/* card */
+.btn {
+  height: 45px;
+  border-radius: 9999px;
+  background-color: transparent;
+  border: 1px solid;
+}
+
+.btn--sm {
+  color: var(--color-white);
+}

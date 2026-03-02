@@ -1,0 +1,26 @@
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-sm);
+  background: var(--color-accent-gradient);
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: var(--font-size-base);
+  }
+}
+
+/* Make footer always stay at the bottom */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+/* projects */
+.projects__grid {
+  display: grid;
+}
