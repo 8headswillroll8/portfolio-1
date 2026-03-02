@@ -23,4 +23,20 @@ main {
 /* projects */
 .projects__grid {
   display: grid;
+  gap: var(--space-1);
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .projects__grid {
+    grid-template-columns: repeat(2, minmax(0, 435px));
+    gap: var(--space-1);
+  }
+}
+
+@media (min-width: 1280px) {
+  .projects__grid {
+    grid-template-columns: repeat(3, minmax(0, 435px));
+    gap: var(--space-3);
+  }
 }
