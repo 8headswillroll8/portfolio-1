@@ -47,13 +47,24 @@ header {
   font-size: var(--font-size-xl);
   margin-bottom: var(--space-7);
 }
+
 .footer__links a {
   padding: 10px 30px;
   border-radius: 9999px;
   color: var(--color-white);
   background-color: transparent;
-  outline: 1px solid;
+  border: 1px solid;
   text-decoration: none;
+
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease;
+}
+
+.footer__links a:hover {
+  border-color: transparent;
+  background: var(--color-primary);
 }
 
 @media (min-width: 1024px) {
@@ -104,14 +115,26 @@ header {
 .card__actions a {
   background: none;
   border: none;
+  color: var(--color-primary);
+}
+
+.card__actions a:hover {
   text-decoration: solid underline 1.5px;
   text-underline-offset: 0.3em;
-  color: var(--color-primary);
 }
 
 .card__actions button img {
   margin-right: var(--space-1);
   max-width: 14px;
+}
+
+.card__content {
+  transition: transform 0.25s ease;
+  transform-origin: bottom right;
+}
+
+.card:hover .card__content {
+  transform: scale(1.03);
 }
 
 /* buttons */
@@ -120,10 +143,20 @@ header {
   border-radius: 9999px;
   background-color: transparent;
   border: 1px solid;
+
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease;
 }
 
 .btn--sm {
   color: var(--color-white);
   width: 100%;
   max-width: 120px;
+}
+
+.btn:hover {
+  border: none;
+  background: var(--color-primary);
 }
