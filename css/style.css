@@ -124,7 +124,7 @@ main {
   }
 
   .hero__quote {
-    font-size: var(--font-size-xxxl);
+    font-size: var(--font-size-xxl);
   }
 }
 
@@ -156,6 +156,10 @@ main {
 }
 
 /* projects */
+.projects {
+  margin-bottom: var(--space-8);
+}
+
 .projects__grid {
   display: grid;
   gap: var(--space-4);
@@ -181,5 +185,9 @@ main {
   .projects__grid {
     grid-template-columns: repeat(3, minmax(0, 435px));
     gap: var(--space-3);
+  }
+
+  .projects {
+    margin-bottom: var(--space-15);
   }
 }
