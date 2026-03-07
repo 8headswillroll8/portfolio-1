@@ -7,22 +7,24 @@ html {
   scroll-behavior: smooth;
 }
 
-.cursor {
-  position: fixed;
-  height: 40px;
-  width: 40px;
-  border-radius: 100%;
-  background-color: var(--color-white);
-  margin-left: -20px;
-  margin-top: -20px;
-  z-index: 1000;
-  mix-blend-mode: difference;
-  pointer-events: none;
-  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);
-}
+@media (min-width: 1024px) {
+  .cursor {
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background-color: var(--color-white);
+    margin-left: -20px;
+    margin-top: -20px;
+    z-index: 1000;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);
+  }
 
-.cursor.active {
-  transform: scale(1.6);
+  .cursor.active {
+    transform: scale(1.6);
+  }
 }
 
 header {
@@ -130,7 +132,7 @@ footer {
   background: var(--color-primary);
 }
 
-.footer_:email-copy {
+.footer__email-copy {
   display: none;
 }
 
