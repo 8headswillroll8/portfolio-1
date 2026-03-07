@@ -3,6 +3,28 @@ main {
   padding-top: 61px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.cursor {
+  position: fixed;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  background-color: var(--color-white);
+  margin-left: -20px;
+  margin-top: -20px;
+  z-index: 1000;
+  /* backdrop-filter: grayscale(1); */
+  mix-blend-mode: difference;
+  pointer-events: none;
+}
+
+.cursor.active {
+  transform: scale(2);
+}
+
 header {
   position: fixed;
   top: 0;
@@ -20,6 +42,27 @@ header {
   max-width: 1130px;
   margin: 0 auto;
   padding: var(--space-1);
+}
+
+.header__link {
+  display: block;
+  text-align: center;
+  padding: 10px 16px;
+  border-radius: 9999px;
+  color: var(--color-white);
+  background-color: transparent;
+  border: 1px solid;
+  text-decoration: none;
+
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease;
+}
+
+.header__link:hover {
+  border-color: transparent;
+  background: var(--color-primary);
 }
 
 @media (min-width: 768px) {
