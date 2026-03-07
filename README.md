@@ -1,47 +1,35 @@
-Your project title
-image
+# Portfolio 1
 
-A simple overview of the use/purpose of the project.
+![Portfolio preview](./assets/images/portfolio-preview.jpg)
 
-Description
-Add a more detailed description of what your project entails and set out to do.
+A personal portfolio website built to present selected front end development projects, skills, and contact details in a clean and responsive layout.
 
-You can add some bullet points if you'd like to:
+## Description
 
-List item 1
-List item 2
-List item 3
-Built With
-You can list a the tech stack that you've used over here
+This project was developed as part of the Front End Development program at Noroff. The goal was to design and build a portfolio website that showcases my work and demonstrates core front end skills using HTML, CSS, and JavaScript.
 
-React.js
-Bootstrap
-Getting Started
-Installing
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
+The website presents a small selection of projects with links to live sites and GitHub repositories. It also includes a short introduction and a simple way for visitors to get in touch.
 
-Clone the repo:
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
-Install the dependencies:
-npm install
-Running
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
+The project focuses on:
 
-To run the app, run the following commands:
+- Responsive layout for mobile and desktop
+- Clean and structured CSS
+- Reusable components
+- Clear project presentation
+- Simple JavaScript interactions
 
-npm run start
-Contributing
-Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate CONTRIBUTING.md and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
+## Built With
 
-Contact
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
+- HTML
+- CSS
+- JavaScript
 
-My Twitter page
+## Getting Started
 
-My LinkedIn page
+### Installing
 
-License
-You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
+Clone the repository:
 
-Acknowledgments
-This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.
+```bash
+git clone https://github.com/8headswillroll8/portfolio-1.git
+```
