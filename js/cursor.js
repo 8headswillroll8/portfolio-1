@@ -3,7 +3,7 @@ window.addEventListener("mousemove", (e) => {
   cursor.style.top = `${e.clientY}px`;
   cursor.style.left = `${e.clientX}px`;
 
-  if (e.target.closest(".card, .portrait, .tech__icons")) {
+  if (e.target.closest(".card, .portrait")) {
     cursor.classList.add("active");
   } else {
     cursor.classList.remove("active");
