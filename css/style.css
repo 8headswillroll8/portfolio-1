@@ -191,3 +191,52 @@ main {
     margin-bottom: var(--space-15);
   }
 }
+
+/* About */
+.tech__wrapper,
+.details__wrapper {
+  margin: 0 var(--space-1);
+}
+
+.tech__icons {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-2);
+}
+
+.tech__wrapper p,
+.details__wrapper p,
+.details__wrapper h2,
+.tech__wrapper h2,
+.details__wrapper h3,
+.tech__wrapper h3 {
+  text-align: center;
+}
+
+.tech__title,
+.details__title {
+  font-size: var(--font-size-xxxl);
+  font-weight: var(--font-w-regular);
+}
+
+.tech__undertitle,
+.details__undertitle {
+  text-transform: uppercase;
+  font-weight: var(--font-w-regular);
+  margin-top: var(--space-7);
+  margin-bottom: var(--space-4);
+}
+
+.tech__wrapper p,
+.details__wrapper p {
+  margin-top: var(--space-1);
+}
+
+.tech,
+.details {
+  margin-bottom: var(--space-9);
+}
+
+.details__wrapper h2 {
+  margin-bottom: var(--space-7);
+}
