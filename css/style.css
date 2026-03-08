@@ -3,9 +3,22 @@ html {
 }
 
 body {
+  position: relative;
+  z-index: 0;
   font-family: var(--font-family-base);
   font-size: var(--font-size-sm);
-  background: var(--color-accent-gradient) center / cover no-repeat fixed;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--color-accent-gradient) center / cover no-repeat;
+  z-index: -1;
+  pointer-events: none;
 }
 
 @media (min-width: 1024px) {
